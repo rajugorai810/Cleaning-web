@@ -50,6 +50,9 @@ const Header = () => {
                     <DropdownMenuContent>
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
+                    <DropdownMenuItem className="md:hidden"><Link href={'/'}> Home</Link></DropdownMenuItem>
+                    <DropdownMenuItem className="md:hidden"><Link href={'/'}> About us</Link></DropdownMenuItem>
+                    <DropdownMenuItem className="md:hidden"><Link href={'/'}> Download App</Link></DropdownMenuItem>
                     <DropdownMenuItem><Link href={'/mybooking'}> My Booking</Link></DropdownMenuItem>
                     <DropdownMenuItem> <SignOutButton> Log out</SignOutButton> </DropdownMenuItem>
                 </DropdownMenuContent>
