@@ -29,7 +29,7 @@ const Header = () => {
     <div className='p-5 shadow-sm flex justify-between'>
         <div className='flex items-center gap-8 '>
 
-            <Image src='/logo.svg' alt='logo' height={100} width={180} className='cursor-pointer'/> 
+            <Image src='/mainLogo.png' alt='logo' height={80} width={80} className='cursor-pointer'/> 
 
             <div className='md:flex items-center gap-6 hidden'>
                 <Link href={'/'}><h2 className='hover:scale-105 hover:text-primary cursor-pointer'>Home</h2></Link>
