@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/button';
 import GlobalApi from '@/app/_services/GlobalApi';
 import { useUser } from '@clerk/nextjs';
 import { toast } from 'sonner';
+import moment from 'moment';
 
 
 const BookingSection = ({children, business}) => {
@@ -59,12 +60,11 @@ const BookingSection = ({children, business}) => {
     }
 
     const saveBooking= ()=>{
-        GlobalApi.createNewBooking(business.id, date,selectedTime,user.primaryEmailAddress.emailAddress, user.fullName).then(resp=>{
+        GlobalApi.createNewBooking(business.id, moment(date).format('DD-MMM-YYYY'),selectedTime,user.primaryEmailAddress.emailAddress, user.fullName).then(resp=>{
             // console.log(resp);
             if(resp){
                 // Toast message 
-                setDate('');
-                setSelectedTime('');
+                
                 toast("Service booked sucessfully")
             }
         },
@@ -79,7 +79,7 @@ const BookingSection = ({children, business}) => {
     },[date])
 
     const BusinessBookedSlot = ()=>{
-        GlobalApi.businessBookedSlot(business.id, date).then(resp=>{
+        GlobalApi.businessBookedSlot(business.id, moment(date).format('DD-MMM-YYYY')).then(resp=>{
             setBookedSlot(resp?.bookings);
         })
     }

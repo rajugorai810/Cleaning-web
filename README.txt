@@ -131,3 +131,12 @@ Design Business details Screen
     (12) Disable Booked Slot for other user :
         Implement to diable the already booked time slot.
         For that ,inside UseEffect , setDate empty and setslectedTime empty.
+
+
+    (13) User Booking page
+        Add tabs from shadcn inside mybooking -> page.jsx
+        Two tabs - Booking and Completed
+        For each tab , we require api endpoints.
+        
+    
+

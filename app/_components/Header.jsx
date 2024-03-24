@@ -33,7 +33,7 @@ const Header = () => {
 
             <div className='md:flex items-center gap-6 hidden'>
                 <Link href={'/'}><h2 className='hover:scale-105 hover:text-primary cursor-pointer'>Home</h2></Link>
-                <h2 className='hover:scale-105 hover:text-primary cursor-pointer'>Services</h2>
+                <Link href={'/'}><h2 className='hover:scale-105 hover:text-primary cursor-pointer'>Services</h2></Link>
                 <h2 className='hover:scale-105 hover:text-primary cursor-pointer'>About Us</h2>
                 <h2 className='hover:scale-105 hover:text-primary cursor-pointer'>Download App</h2>
             </div>
@@ -50,7 +50,7 @@ const Header = () => {
                     <DropdownMenuContent>
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>My Booking</DropdownMenuItem>
+                    <DropdownMenuItem><Link href={'/mybooking'}> My Booking</Link></DropdownMenuItem>
                     <DropdownMenuItem> <SignOutButton> Log out</SignOutButton> </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
