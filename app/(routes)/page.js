@@ -45,7 +45,7 @@ const getAllBusinessList = ()=>{
       <Hero/>
 
       <CategoryList categoryList={categoryList}/>
-      <BusinessList businessList={businessList} title={"Popular Businesses"}/>
+      <BusinessList businessList={businessList} title={"Popular Businesses"} seeAll={true} limit={true}/>
     </div>
   );
 }

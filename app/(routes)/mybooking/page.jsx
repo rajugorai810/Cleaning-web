@@ -40,10 +40,10 @@ const MyBooking = () => {
       <h2 className='font-bold text-[20px] my-2'>My Bookings</h2>
       <Tabs defaultValue="account" className="w-full">
         <TabsList className='w-full justify-start'>
-          <TabsTrigger value="booked">Booked</TabsTrigger>
+          <TabsTrigger value="booked" >Booked</TabsTrigger>
           <TabsTrigger value="completed">Completed</TabsTrigger>
         </TabsList>
-        <TabsContent value="booked">
+        <TabsContent value="booked" >
           <BookingHistory bookingHistory ={filterData('booked')}/>
         </TabsContent>
         <TabsContent value="completed">

@@ -3,14 +3,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const BusinessList = ({businessList, title}) => {
+const BusinessList = ({businessList, title, seeAll, limit}) => {
   return (
     <div className='mt-5'>
-        <h2 className='font-bold text-[22px]'>{title}</h2>
+        <div className='flex justify-between'>
+            <h2 className='font-bold text-[22px]'>{title}</h2>
+            {seeAll&&<Link href={'/search/Cleaning'}> <h2>See All</h2></Link>}
+        </div>
 
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-6'>
             {businessList.length >0 ?
-            businessList.map((business, index)=>(
+            businessList.map((business, index)=>(limit?index<=7:true)&&(
                 <Link href={'/details/'+business.id} key={index} className='shadow-md rounded-sm hover:shadow-lg hover:shadow-purple-500 transition-all ease-linear cursor-pointer hover:scale-105'>
                     <Image src={business?.images[0]?.url} alt='image' width={500} height={200} className='h-[150px] md:h-[250px] object-cover rounded-lg'/>
                     <div className='flex flex-col items-baseline p-3 gap-1'>

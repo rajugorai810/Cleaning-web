@@ -89,6 +89,9 @@ const getBusinessById = async (id)=>{
       images {
         url
       }
+      description {
+        html
+      }
     }
   }
   `

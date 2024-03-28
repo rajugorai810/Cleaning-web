@@ -14,13 +14,13 @@ const BusinessByCategory = ({params}) => {
 
   const getBusinessList =()=>{
     GlobalApi.getBusinessByCategory(params.category).then(resp=>{
-      console.log(resp);
+      // console.log(resp);
       setBusinessList(resp?.businessLists);
     })
   }
   return (
     <div>
-      <BusinessList title={params.category} businessList={businessList}/>
+      <BusinessList title={params.category} businessList={businessList} seeAll={false} limit={false}/>
     </div>
   )
 }
