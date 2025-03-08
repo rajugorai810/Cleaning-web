@@ -38,4 +38,5 @@ const BusinessDetail = ({params}) => {
   )
 }
 
+// Export 
 export default BusinessDetail;
