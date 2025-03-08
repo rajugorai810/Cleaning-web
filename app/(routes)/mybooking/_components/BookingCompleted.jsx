@@ -5,5 +5,5 @@ const BookingCompleted = () => {
     <div>BookingCompleted</div>
   )
 }
-
+//Export
 export default BookingCompleted;
