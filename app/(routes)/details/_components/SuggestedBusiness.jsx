@@ -58,5 +58,5 @@ const SuggestedBusiness = ({business}) => {
     </div>
   )
 }
-
+//Export
 export default SuggestedBusiness;
