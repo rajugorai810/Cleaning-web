@@ -141,5 +141,5 @@ const BookingSection = ({children, business}) => {
     </div>
   )
 }
-
+//Export
 export default BookingSection;
