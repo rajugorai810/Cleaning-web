@@ -17,7 +17,7 @@ import { SignedOut } from '@clerk/nextjs';
 
 
 
-const Header = () => {
+const Header = () => { 
 
   
 
