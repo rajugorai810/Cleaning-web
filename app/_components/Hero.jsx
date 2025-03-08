@@ -3,7 +3,7 @@ import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import React from 'react'
 
-const Hero = () => {
+const Hero = () => { 
   return (
     <div className='flex items-center  gap-3 flex-col pt-14 pb-7'>
         <h2 className='font-bold text-[46px] text-center'>Find Home 
