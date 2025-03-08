@@ -4,7 +4,7 @@ import Header from "./_components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
 
-
+ 
 const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
