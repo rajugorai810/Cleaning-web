@@ -1,5 +1,5 @@
 const { gql, default: request } = require("graphql-request");
-
+ 
 const MASTER_URL="https://api-ap-south-1.hygraph.com/v2/cltz72ju10gv107w6aignyzx1/master";
 
 const getCategory = async ()=>{
