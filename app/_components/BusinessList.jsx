@@ -42,5 +42,5 @@ const BusinessList = ({businessList, title, seeAll, limit}) => {
     </div>
   )
 }
-
+////Export 
 export default BusinessList
