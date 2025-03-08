@@ -29,5 +29,5 @@ const BusinessInfo = ({business}) => {
     </div>
   )
 }
-
+//Export
 export default BusinessInfo;
