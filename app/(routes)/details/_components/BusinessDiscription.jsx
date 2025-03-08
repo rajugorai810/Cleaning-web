@@ -21,5 +21,5 @@ const BusinessDiscription = ({business}) => {
     </div>
   )
 }
-
+//Export
 export default BusinessDiscription;
